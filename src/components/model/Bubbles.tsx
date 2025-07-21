@@ -1,5 +1,6 @@
 import {
   BufferGeometry,
+  Color,
   InstancedMesh,
   Material,
   Object3D,
@@ -121,7 +122,12 @@ export const BackgroundBubbles = () => {
             radius={5}
             intensity={30}
             luminanceInfluence={0.05}
-            color="rgb(255, 237, 119)"
+            // 暫定措置
+            color={new Color(255, 237, 119)}
+            worldDistanceThreshold={1}
+            worldDistanceFalloff={0.01}
+            worldProximityThreshold={0.1}
+            worldProximityFalloff={0.1}
           />
         </EffectComposer>
       </Suspense>
