@@ -1,3 +1,4 @@
+import { Color, Vector3 } from "three";
 import { ContactShadows, useGLTF } from "@react-three/drei";
 import { EffectComposer, SSAO } from "@react-three/postprocessing";
 
@@ -5,7 +6,6 @@ import { Bubbles } from "./Bubbles";
 import { Canvas } from "@react-three/fiber";
 import Lights from "./Lights";
 import { Suspense } from "react";
-import { Vector3 } from "three";
 
 /**
  * モデル.
@@ -43,7 +43,12 @@ const DreamSpace = () => {
             radius={5}
             intensity={30}
             luminanceInfluence={0.05}
-            color="rgb(255, 237, 119)"
+            // 暫定措置
+            color={new Color(255, 237, 119)}
+            worldDistanceThreshold={1}
+            worldDistanceFalloff={0.01}
+            worldProximityThreshold={0.1}
+            worldProximityFalloff={0.1}
           />
         </EffectComposer>
       </Suspense>
