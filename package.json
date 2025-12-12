@@ -15,8 +15,6 @@
     "@types/node": "^22.16.5",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
-    "eslint": "8.38.0",
-    "eslint-config-next": "14.2.35",
     "firebase": "^9.21.0",
     "next": "14.2.35",
     "react": "18.2.0",
@@ -24,12 +22,15 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
-    "typescript": "5.0.4",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@emotion/styled": "^11.11.0",
     "@types/react-datepicker": "^4.11.2",
-    "@types/uuid": "^9.0.1"
+    "@types/uuid": "^9.0.1",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.10",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.49.0"
   }
 }
