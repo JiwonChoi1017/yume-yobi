@@ -57,7 +57,7 @@ const SignUpForm = () => {
     setIsDisabled(!email || !password || password.length < 10);
   };
   // エラー状態か
-  const isError = errorInfo?.status === RESPONSE_STATUS.ERROR ?? false;
+  const isError = errorInfo?.status === RESPONSE_STATUS.ERROR;
   // メールアドレス入力エラーか
   const isEmailError =
     isError &&
