@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import DreamSpace from "@/components/model/DreamSpace";
 import Loader from "@/components/ui/Loader";
 import Logo from "@/components/ui/Logo";
 import NotSupportSpError from "@/components/error/NotSupportSpError";
@@ -49,7 +48,6 @@ const HomePage = () => {
 
   return (
     <>
-      <DreamSpace />
       <Logo />
       <OpenDiaryButton text="日記帳を開く" clickHandler={openDiaryHandler} />
     </>
