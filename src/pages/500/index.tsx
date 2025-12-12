@@ -1,4 +1,3 @@
-import { BackgroundBubbles } from "@/components/model/Bubbles";
 import Error from "@/components/error/Error";
 
 /**
@@ -8,14 +7,11 @@ import Error from "@/components/error/Error";
  */
 const InternalServerErrorPage = () => {
   return (
-    <>
-      <Error
-        title="500"
-        subtitle="Internal Server Error"
-        detail="申し訳ありません。このページは表示できません。"
-      />
-      <BackgroundBubbles />
-    </>
+    <Error
+      title="500"
+      subtitle="Internal Server Error"
+      detail="申し訳ありません。このページは表示できません。"
+    />
   );
 };
 

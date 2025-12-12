@@ -1,7 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 
 import { AuthContext } from "@/contexts/AuthContext";
-import { BackgroundBubbles } from "@/components/model/Bubbles";
 import Book from "@/components/layout/Book";
 import Calendar from "@/components/calendar/Calendar";
 import { DateHelper } from "@/helpers/date-helper";
@@ -135,31 +134,28 @@ const CalendarPage = ({ date: { year, month } }: Props) => {
   };
 
   return (
-    <>
-      <Book
-        // カレンダー
-        leftPage={
-          <Calendar
-            yearMonth={yearMonth}
-            diaryList={diaryList}
-            clickTodayHandler={clickTodayHandler}
-            clickPrevHandler={clickPrevHandler}
-            clickNextHandler={clickNextHandler}
-            onClickDateHandler={onClickDateHandler}
-          />
-        }
-        // 日記リスト
-        rightPage={
-          <DiaryList
-            isLoading={isLoading}
-            diaryList={diaryList}
-            showDiaryList={showDiaryList}
-          />
-        }
-        currentPage="calendar"
-      />
-      <BackgroundBubbles />
-    </>
+    <Book
+      // カレンダー
+      leftPage={
+        <Calendar
+          yearMonth={yearMonth}
+          diaryList={diaryList}
+          clickTodayHandler={clickTodayHandler}
+          clickPrevHandler={clickPrevHandler}
+          clickNextHandler={clickNextHandler}
+          onClickDateHandler={onClickDateHandler}
+        />
+      }
+      // 日記リスト
+      rightPage={
+        <DiaryList
+          isLoading={isLoading}
+          diaryList={diaryList}
+          showDiaryList={showDiaryList}
+        />
+      }
+      currentPage="calendar"
+    />
   );
 };
 

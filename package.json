@@ -12,31 +12,24 @@
     "@fullcalendar/core": "^6.1.6",
     "@fullcalendar/daygrid": "^6.1.6",
     "@fullcalendar/react": "^6.1.6",
-    "@react-three/drei": "^9.64.0",
-    "@react-three/fiber": "^8.12.0",
-    "@react-three/postprocessing": "^2.7.1",
     "@types/node": "^22.16.5",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
     "eslint": "8.38.0",
-    "eslint-config-next": "13.3.0",
+    "eslint-config-next": "14.2.35",
     "firebase": "^9.21.0",
-    "leva": "^0.9.34",
-    "next": "13.3.0",
-    "r3f-perf": "^7.1.2",
+    "next": "14.2.35",
     "react": "18.2.0",
     "react-datepicker": "^4.11.0",
     "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
-    "three": "^0.178.0",
     "typescript": "5.0.4",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@emotion/styled": "^11.11.0",
     "@types/react-datepicker": "^4.11.2",
-    "@types/three": "^0.150.1",
     "@types/uuid": "^9.0.1"
   }
 }

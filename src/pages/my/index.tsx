@@ -1,7 +1,6 @@
 import { useContext, useEffect } from "react";
 
 import { AuthContext } from "@/contexts/AuthContext";
-import { BackgroundBubbles } from "@/components/model/Bubbles";
 import Book from "@/components/layout/Book";
 import MyPageMenu from "@/components/my/MyPageMenu";
 import { useRouter } from "next/router";
@@ -25,12 +24,7 @@ const MyPage = () => {
     }
   }, [currentUser, router]);
 
-  return (
-    <>
-      <Book leftPage={<></>} rightPage={<MyPageMenu />} currentPage="my" />
-      <BackgroundBubbles />
-    </>
-  );
+  return <Book leftPage={<></>} rightPage={<MyPageMenu />} currentPage="my" />;
 };
 
 export default MyPage;
