@@ -184,7 +184,9 @@ const DiaryForm = ({
             dateFormat="yyyy/MM/dd"
             locale="ja"
             selected={selectedDate}
-            onChange={onChangeDateHandler}
+            onChange={(date: Date | null) => {
+              onChangeDateHandler(date ?? new Date());
+            }}
           />
         </div>
         <div>
